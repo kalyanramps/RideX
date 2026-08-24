@@ -1,0 +1,118 @@
+####################################################
+# RideX - Spring Boot (Maven) .gitignore
+####################################################
+
+############################
+# Help File
+############################
+HELP.md
+
+############################
+# Maven
+############################
+target/
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+############################
+# Spring Tool Suite (STS)
+############################
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache
+
+############################
+# IntelliJ IDEA
+############################
+.idea/
+*.iws
+*.iml
+*.ipr
+
+############################
+# NetBeans
+############################
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+############################
+# Visual Studio Code
+############################
+.vscode/
+
+############################
+# Build Output
+############################
+out/
+bin/
+
+############################
+# Logs
+############################
+*.log
+logs/
+
+############################
+# Operating System Files
+############################
+.DS_Store
+Thumbs.db
+
+############################
+# Environment Files
+############################
+.env
+.env.*
+
+############################
+# Application Configuration
+# Ignore only if it contains
+# passwords, JWT secrets or API keys
+############################
+src/main/resources/application.properties
+
+############################
+# Temporary Files
+############################
+*.tmp
+*.temp
+*.bak
+*.swp
+
+src/main/java/com/ridex/ridex/config/SecurityConfig.java
+
+
+src/main/java/com/ridex/ridex/controller/CustomerController.java
+src/main/java/com/ridex/ridex/controller/RideController.java
+
+src/main/java/com/ridex/ridex/dto/LoginResponse.java
+
+
+src/main/java/com/ridex/ridex/entity/Driver.java
+
+
+src/main/java/com/ridex/ridex/repository/CustomerRepository.java
+
+src/main/java/com/ridex/ridex/security/JwtFilter.java
+
+src/main/java/com/ridex/ridex/service/DriverService.java
+
+
+src/main/resources/static/admin-dashboard.html
+src/main/resources/static/driver-dashboard.html
+src/main/resources/static/driver-trips.html
+src/main/resources/static/rides.html
+src/main/resources/static/login.html
+src/main/resources/static/admin-analytics.html
+src/main/resources/static/driver-login.html
