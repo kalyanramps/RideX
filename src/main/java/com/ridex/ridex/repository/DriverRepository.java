@@ -13,32 +13,21 @@ public interface DriverRepository extends JpaRepository<Driver, Long> {
 
     // FIND AVAILABLE DRIVERS
 
-    List<Driver> findByStatus(
-            Driver.DriverStatus status
-    );
+    List<Driver> findByStatus(Driver.DriverStatus status);
 
     // SEARCH DRIVER
 
-    List<Driver> findByFullNameContainingIgnoreCase(
-            String name
-    );
+    List<Driver> findByFullNameContainingIgnoreCase(String name);
 
     // FIND LICENSE
 
-    Driver findByLicenseNumber(
-            String licenseNumber
-    );
+    Driver findByLicenseNumber(String licenseNumber);
 
     // FIND DRIVER BY EMAIL
 
-    Optional<Driver> findByEmail(
-            String email
-    );
+    Optional<Driver> findByEmail(String email);
 
     // COUNT DRIVERS
 
-    long countByStatus(
-            Driver.DriverStatus status
-    );
-
+    long countByStatus(Driver.DriverStatus status);
 }
